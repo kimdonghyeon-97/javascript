@@ -1,0 +1,59 @@
+<!--
+[JavaScript]
+JavaScript는 html을 제어하는 언어이다.
+<input type="button" value="버튼의 이름" onclick="JS문법">
+document.querySelector('body') // 이 문서에서 'body'라는 태그를 선택해라.
+span, div // 아무런 기능이 없는 태그 단, span은 줄바꿈도 하지 않음.
+-->
+<!doctype html>
+<html>
+<head>
+  <style>
+    .js {
+      font-weight:bold;
+      color:red;
+    }
+    #first {
+      color:green;
+    }
+    span {
+      color:blue;
+    }
+  </style>
+<title>WEB1 - html</title>
+<meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B18ECN8B5T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B18ECN8B5T');
+</script>
+</head>
+<body>
+  <h1><a href="index.html">WEB</a></h1>
+  <div id="grid">
+  <ol>
+    <input type="button" value="night" onclick="
+    document.querySelector('body').style.backgroundColor='black';
+    document.querySelector('body').style.color='white';
+    ">
+    <input type="button" value="day" onclick="
+    document.querySelector('body').style.backgroundColor='white';
+    document.querySelector('body').style.color='black';
+    ">
+    <br></br>
+    <li><a href="1.html">HTML</a></li>
+    <li><a href="2.html">CSS</a></li>
+    <li><a href="3.html">JavaScript</a></li>
+  </ol>
+  <div id="article">
+    <h2 style="background-color:coral;color:powderblue;">JavaScript란 무엇인가?</h2>
+      <span id="first" class="js">자바스크립트</span>(영어: JavaScript)는 객체 기반의 스크립트 프로그래밍 언어이다. 이 언어는 웹 브라우저 내에서 주로 사용하며, 다른 응용 프로그램의 내장 객체에도 접근할 수 있는 기능을 가지고 있다. 또한 <span class="js">자바스크립트</span>는 Node.js와 같은 런타임 환경과 같이 서버 프로그래밍에도 사용되고 있다.
+    </div>
+  </div>
+</body>
+</html>

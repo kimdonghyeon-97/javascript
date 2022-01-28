@@ -1,0 +1,42 @@
+<!--
+[css box model]
+block level elements : h1과 같이 화면 전체를 쓰는 태그
+inline element : a와 같이 자신의 크기만큼만 쓰는 태그
+block 모델과 inline 모델 모두 html 속성의 기본 값일 뿐 변경 가능하다.
+
+border-width:크기px; // 경계선 굵기
+border-color:색상; // 경계선 색상
+border-style:solid; // 경계선 일반선
+display:inline // 자신의 크기 만큼만 사용
+display:block // 화면 전체를 사용
+display:none // 안보임
+css 내에서는 주석이 /* */ 이다.
+padding:크기px; // 문자와 테두리 사이에 크기만큼의 여백을 줌 (내부 여백)
+margin: 크기px; // 테두리와 외부사이에 크기만큼의 여백을 줌 (외부 여백)
+width: 크기px; // 크기만큼 태그의 가로크기가 변경된다. (content의 가로)
+웹페이지에서 마우스 우클릭 - 검사를 클릭하면 css box model을 간단히 확인할 수 있다.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      h1{
+        font-size:45px;
+        border-bottom:1px solid black;
+        padding:20px;
+        display:block;
+        text-align:center;
+      }
+      /* border:5px solid red; 로도 사용할 수 있다. (순서와 관계없다)*/
+    </style>
+  </head>
+  <body>
+    <h1>WEB</h1>
+    <h2>CSS란 무엇인가?</h2>
+  Cascading Style Sheets(<a href="https://en.wikipedia.org/wiki/CSS">CSS</a>)는 HTML이나 XML(XML의 방언인 SVG, XHTML 포함)로 작성된 문서의 표시 방법을 기술하기 위한 스타일 시트 언어입니다. CSS는 요소가 화면, 종이, 음성이나 다른 매체 상에 어떻게 렌더링되어야 하는지 지정합니다.
+  </body>
+</html>

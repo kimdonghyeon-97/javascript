@@ -1,0 +1,26 @@
+<!--
+[JavaScript]
+배열 & 반복문
+script 내부 document.write에서도 태그를 이용할 수 있다.
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Loop & Array</h1>
+    <h2>Co workers</h2>
+    <ul>
+    <script>
+      var coworkers = ['egoing', 'leezche', 'duru', 'taeho'];
+      var i = 0;
+      while(i<coworkers.length){
+        document.write('<li><a href="http://a.com/'+coworkers[i]+'">'+coworkers[i]+'</a></li>\n');
+        i++;
+      }
+    </script>
+    </ul>
+  </body>
+</html>

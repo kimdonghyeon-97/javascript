@@ -1,0 +1,33 @@
+<!--
+div // 기본적으로 block level element로써 화면 전체를 사용한다. (줄바꿈 O)
+span // inline element로써 자신의 크기만큼만 공간을 사용한다. (줄바꿈 X)
+display:grid // grid 설정
+grid-template-columns: 크기px 1fr; 첫 번째 태그는 크기px 만큼의 공간을 가지고
+다른 태그는 나머지 전체의 공간을 가지며 같은 열에 위치함.
+2fr 1fr 로 설정할 경우 화면을 2:1 비율로 나눠가짐.
+https://caniuse.com // 브라우즈별 해당 css를 사용해도 되는지 검색 가능 사이트
+
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      #grid {
+        border:5px solid pink;
+        display:grid;
+        grid-template-columns: 150px 1fr;
+      }
+      div {
+        border:5px solid gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="grid">
+      <div>NAVIGATION</div>
+      <div>ARTICLE</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!--
+[JavaScript]
+alert('text') // 새 팝업 알림창으로 text 출력
+<input type="text" onchange="alert('text')">
+-> text창에서 변화가 있고, 마우스 포인터를 텍스트창 밖으로 옮겨 클릭시 알림발생.
+<input type="text" onkeydown="alert('text')">
+-> text창에서 어떠한 키를 입력했을 경우 알림 출력
+'text'.upperCase() // text의 내용을 대문자로 변경
+'text'.indexOf('index') // text의 내용중 index가 포함된 문자열의 시작 인덱스 표시
+var 변수명; // 변수 선언
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <input type="button" value="hi" onclick="alert('hi')">
+    <input type="text" onchange="alert('changed')">
+    <input type="text" onkeydown="alert('pressd')">
+  </body>
+</html>

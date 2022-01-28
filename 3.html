@@ -1,0 +1,62 @@
+<!--
+[JavaScript]
+JavaScript는 html을 제어하는 언어이다.
+<input type="button" value="버튼의 이름" onclick="JS문법">
+document.querySelector('body') // 이 문서에서 'body'라는 태그를 선택해라.
+this // 자기 자신을 가리키는 명령어로써 코드를 훨신 간결하게 만들 수 있다.
+예를들면 document.querySelector.('태그명'). 을 this. 으로 줄일 수 있는 것이다.
+변수 선언 // 중복의 제거로 코드를 간결화 할 수 있다.
+객체는 폴더의 관점으로 생각하면 된다. document또한 객체이다.
+객체에 속해있는 함수는 "메소드" 라고 부른다.
+JavaScript 파일을 가져오는 방법은
+<script src = "파일명.js"><script> 이다.
+
+JavaScript의 Library중에는 jQuery가 있다.
+Google CDN(Content Delivery Network)을 이용해서 jquery를 다운받지 않고도
+script 태그를 이용해 가져올 수 있다.
+Ctrl + 슬래시 // 주석처리해줌.
+
+-->
+<!doctype html>
+<html>
+
+<head>
+  <title>WEB1 - html</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B18ECN8B5T"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-B18ECN8B5T');
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src = "colors.js"></script>
+</head>
+
+<body>
+  <h1><a href="index.html">WEB</a></h1>
+  <div id="grid">
+    <ol>
+      <input type="button" value="night" onclick="
+      nightDayHandler(this);
+    ">
+      <br><br>
+      <li><a href="1.html">HTML</a></li>
+      <li><a href="2.html">CSS</a></li>
+      <li><a href="3.html">JavaScript</a></li>
+    </ol>
+    <div id="article">
+      <h2>JavaScript란 무엇인가?</h2>
+      자바스크립트(영어: JavaScript)는 객체 기반의 스크립트 프로그래밍 언어이다. 이 언어는 웹 브라우저 내에서 주로 사용하며, 다른 응용 프로그램의 내장 객체에도 접근할 수 있는 기능을 가지고 있다. 또한 Node.js와 같은 런타임 환경과 같이 서버 프로그래밍에도 사용되고 있다.
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!--
+[html]
+[단축키]
+ctrl + o(open) : 현재 웹페이지에서 파일 열기
+ctrl + s(save) : 저장
+[태그]
+<strong> 굵게
+<u> 밑줄 (underline)
+<h1> 가장 큰 제목 태그 / 한 페이지당 1개 사용 권장, 중간 단계 스킵 X
+<br> 줄바꿈 태그 (단독사용)
+<p> 단락을 나타내는 태그
+unsplash.com : 저작권에 구애받지 않는 이미지 제공
+<img src"이미지 이름.확장자" alt="이미지 누락시 제공 텍스트" width="가로" height="세로">
+<ol> orederded list. 순서화 숫자 제공.
+<ul> unorderded list. bullet point 제공,
+<li> ol과 ul의 자식태그.
+드래그 후 tab키 : 들여쓰기
+<tr> table row : 테이블 열
+<th> table header : 테이블 헤더 (굵은 글씨)
+<td> table cell : 테이블 셀
+------------
+table 사용시
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+정의 필요
+------------
+<title> 웹 페이지 제목
+<meta charset="utf-8"> 이 본문이 utf-8 방식으로 저장되어있음.
+<head> 본문을 설명
+<body> 본문
+<html> 최 상위 태그
+<!doctype html> 이 문서는 html이다. 최 상단에 사용할 것.
+<a href="링크" target="_blank" title="툴팁">텍스트</a>
+-> target=_blank"는 새  탭 열기
+<link rel="stylesheet" href="style.css"> // style.css 파일을 적용시킨다.
+-->
+<!doctype html>
+<html>
+<head>
+  <title>WEB1 -html</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B18ECN8B5T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B18ECN8B5T');
+</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src = "colors.js"></script>
+</head>
+<body>
+  <h1><a href="index.html">WEB</a></h1>
+  <div id="grid">
+  <ol>
+    <input type="button" value="night" onclick="
+    nightDayHandler(this);
+  "><br><br>
+    <li><a href="1.html">HTML</a></li>
+    <li><a href="2.html">CSS</a></li>
+    <li><a href="3.html">JavaScript</a></li>
+  </ol>
+  <div id ="article">
+    <h2>HTML이란 무엇인가?</h2>
+    <p><a href="https://en.wikipedia.org/wiki/HTML" target="_blank" title="html5 specification">Hypertext Markup Language</a> (HTML) is the standard markup
+    language for <strong>creating <u>web</u> pages</strong> and web applications.
+    Webbrowsers receive HTML documents from a web server or from local storage and
+    render them into multimedia web pages.
+    HTML describes the structure of a webpage semantically and originally
+    included cues for the appearance of the document.</p>
+    <img src="coding.jpg" alt="The man who is coding" width="200" height="200">
+    <p style="margin-top:45px">HTML elements are the building blocks of HTML pages. With HTML constructs,
+    images and other objects, such as interactive forms, may be embedded into
+    the rendered page. It provides a means to create structed documents by
+    denoting structural semantics for text such as headings, paragraphs, lists,
+    links, quotes and other items. HTML elements are delineated by tags, written
+    using angle brackets.</p>
+    </div>
+  </div>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <!-- 라이브리 시티 설치 코드 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC81NTI1OC8zMTcyNQ==">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+<noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/602e2a049c4f165d47c482fc/1euq588vj';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</div>
+<!-- 시티 설치 코드 끝 -->
+
+  <ul>
+    <li>egoing</li>
+    <li>k8805</li>
+    <li>youbin</li>
+  </ul>
+
+  <style>
+    table, tr, td, th {
+      border: 1px solid black;
+    }
+  </style>
+
+  <table>
+    <tr>
+      <th>TOEIC</th>
+      <th>JPT</th>
+    </tr>
+    <tr>
+      <td>875</td>
+      <td>905</td>
+    </tr>
+  </table>
+</body>
+</html>
