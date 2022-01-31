@@ -38,57 +38,9 @@ Ctrl + 슬래시 // 주석처리해줌.
   </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src = "colors.js"></script>
-
-  <script>
-    window.fbAsyncInit = function() {
-      FB.init({
-        appId      : '979014589715612',
-        cookie     : true,
-        xfbml      : true,
-        version    : 'v12.0'
-      });
-
-      FB.AppEvents.logPageView();
-
-    };
-
-    FB.getLoginStatus(function(response) {
-    statusChangeCallback(response);
-    if(response.status === 'connected') {
-      document.querySelector('#authBtn').value = 'Logout'
-      FB.api('/me', function(resp){
-        document.querySelector('#name').innerHTML = ' Welcome ' + resp.name;
-      });
-    } else {
-      document.querySelector('#authBtn').value = 'Login'
-      document.querySelector('#name').innerHTML = '';
-    }
-    });
-
-    (function(d, s, id){
-       var js, fjs = d.getElementsByTagName(s)[0];
-       if (d.getElementById(id)) {return;}
-       js = d.createElement(s); js.id = id;
-       js.src = "https://connect.facebook.net/en_US/sdk.js";
-       fjs.parentNode.insertBefore(js, fjs);
-     }(document, 'script', 'facebook-jssdk'));
-  </script>
 </head>
 
 <body>
-  <input type="button" id="authBtn" value="checking..." onclick="
-      if(this.value === 'Login'){
-        // now logout
-        FB.login(function(res){
-          checkLoginStatus(res);
-        });
-      } else {
-        // now login
-        FB.logout(function(res){
-          checkLoginStatus(res);
-        });
-      }
-  "> <span id="name"></span>
   <h1><a href="index.html">WEB</a></h1>
   <div id="grid">
     <ol>
